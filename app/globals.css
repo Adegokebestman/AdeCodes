@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-black: #000;
+  --background-green: #00AC6B;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +19,41 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-black);
+}
+
+/* mx-auto max-w-5xl flex-col align-center justify-center py-8 px-5 xl:px-0  */
+
+/* Hero Styles */
+.hero{
+  @apply flex xl:flex-row flex-col gap-5 relative z-0
+  max-w-[1440px] mx-4 md:w-3/4 w-full md:px-4 px-2;
+}
+
+.hero_title{
+  @apply 2xl:text-[32px] md:w-[100%] w-full text-left text-white mt-4 sm:text-[24px] sm:leading-[46px] text-[30px] font-bold
+}
+
+.hero_subtitle{
+  @apply 2xl:text-[18px] space-y-5 tracking-tight md:w-[80%] w-[80%]  text-white text-[16px] sm:leading-[28px] leading-[24px] font-medium mt-8
+}
+
+.span{
+  @apply text-green-100
+}
+
+.underline{
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: var(--background-green);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transform: none;
+  transform-origin: 50% 50% 0px;
+  opacity: 1;
 }

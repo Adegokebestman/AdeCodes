@@ -2,12 +2,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
   const [activeLink, setActiveLink] = useState('home');
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    router.push(link);
   };
 
   return (

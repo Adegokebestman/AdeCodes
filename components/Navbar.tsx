@@ -21,28 +21,28 @@ const Navbar = () => {
       </nav>
       <div className='md:static fixed flex mb-4 ml-8 justify-center items-center md:flex-row md:space-x-2  bottom-0 rounded-full border overflow-hidden bg-white bg-opacity-95 px-1 py-4 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10'>
         <ul className='flex space-x-0 md:space-x-2 justify-center md:justify-start'>
-          <li className={`group relative ${activeLink === 'home' ? 'font-medium text-white active-link' : 'text-black dark:text-white'}`}>
+          <li className={`group relative ${activeLink === 'home' ? 'font-medium text-white active-link' : 'text-black dark:text-black'}`}>
             <Link href='/' onClick={() => handleLinkClick('home')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'home' ? 'rounded-full bg-green-100 py-4 px-2   slide-left' : ''}`}>
               Home
               {/* <div className='underline transform-none'></div> */}
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'shop' ? 'font-medium text-white active-link' : 'text-black dark:text-white'}`}>
+          <li className={`group relative ${activeLink === 'shop' ? 'font-medium text-white active-link' : 'text-black dark:text-black'}`}>
             <Link href='/shop' onClick={() => handleLinkClick('shop')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'shop' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Shop
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'blogs' ? 'font-medium text-white' : 'text-black dark:text-white'}`}>
+          <li className={`group relative ${activeLink === 'blogs' ? 'font-medium text-white' : 'text-black dark:text-black'}`}>
             <Link href='/blogs' onClick={() => handleLinkClick('blogs')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'blogs' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Blogs
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'stack' ? 'font-medium text-white' : 'text-black dark:text-white'}`}>
+          <li className={`group relative ${activeLink === 'stack' ? 'font-medium text-white' : 'text-black dark:text-whiblackte'}`}>
             <Link href='/stack' onClick={() => handleLinkClick('stack')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'stack' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Stack
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'contact' ? 'font-medium text-white' : 'text-black dark:text-white'}`}>
+          <li className={`group relative ${activeLink === 'contact' ? 'font-medium text-white' : 'text-black dark:text-black'}`}>
             <Link href='/contact' onClick={() => handleLinkClick('contact')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'contact' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Contact
             </Link>

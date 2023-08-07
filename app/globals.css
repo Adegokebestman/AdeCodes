@@ -26,16 +26,16 @@ body {
 
 /* Hero Styles */
 .hero{
-  @apply flex xl:flex-row flex-col gap-5 relative z-0
-  max-w-[1440px] mx-4 md:w-3/4 w-full md:px-4 ;
+  @apply flex xl:flex-row flex-col gap-2 relative z-0
+  max-w-[1440px] mx-4 md:w-5/6 w-full md:px-4 ;
 }
 
 .hero_title{
-  @apply 2xl:text-[32px] md:w-[100%] w-full text-left text-white md:mt-4 sm:text-[24px] sm:leading-[46px] text-[24px] font-bold
+  @apply 2xl:text-[40px] 2xl:leading-[60px] md:w-[100%] w-full text-left text-white md:mt-4 sm:text-[24px] sm:leading-[42px] text-[24px] font-bold
 }
 
 .hero_subtitle{
-  @apply 2xl:text-[18px] space-y-5 tracking-tight md:w-[80%] w-[80%]  text-white text-[16px] sm:leading-[28px] leading-[24px] font-medium mt-8
+  @apply 2xl:text-[18px] space-y-5 tracking-tight md:w-[80%] w-[80%]  text-darkGray-100 text-[16px] sm:leading-[28px] leading-[24px] font-medium md:mt-6 mt-4
 }
 
 .span{
@@ -56,4 +56,14 @@ body {
   transform: none;
   transform-origin: 50% 50% 0px;
   opacity: 1;
+}
+
+
+.active-link,
+.active-link-bg {
+  transition: all 1s ease-in-out;
+}
+.slide-left {
+  transform: translateX(-10px);
+  transition: transform 0.5s ease-in-out;
 }

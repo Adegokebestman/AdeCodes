@@ -26,12 +26,14 @@ const Hero = () => {
             </h3>
     <CustomButton
     title="Hire me"
+    btnType="button"
     containerStyles="bg-green-100 text-white rounded-full
     mt-8 px-5 py-2 font-medium text-xl"
     handleClick={handleScroll} />
 
 <CustomButton
     title="Get Template"
+    btnType='button'
     containerStyles="border-green-100 border-2 text-white rounded-full
     mt-8 px-5 py-2 text-xl ml-10"
     handleClick={handleScroll} />

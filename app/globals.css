@@ -27,11 +27,11 @@ body {
 /* Hero Styles */
 .hero{
   @apply flex xl:flex-row flex-col gap-5 relative z-0
-  max-w-[1440px] mx-4 md:w-3/4 w-full md:px-4 px-2;
+  max-w-[1440px] mx-4 md:w-3/4 w-full md:px-4 ;
 }
 
 .hero_title{
-  @apply 2xl:text-[32px] md:w-[100%] w-full text-left text-white mt-4 sm:text-[24px] sm:leading-[46px] text-[30px] font-bold
+  @apply 2xl:text-[32px] md:w-[100%] w-full text-left text-white md:mt-4 sm:text-[24px] sm:leading-[46px] text-[24px] font-bold
 }
 
 .hero_subtitle{

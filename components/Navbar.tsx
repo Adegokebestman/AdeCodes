@@ -1,17 +1,23 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 const Navbar = () => {
-  const router = useRouter();
   const [activeLink, setActiveLink] = useState('home');
+  const [mobileActiveLink, setMobileActiveLink] = useState('home'); // Separate state for mobile
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setActiveLink(mobileActiveLink);
+    }
+  }, [mobileActiveLink]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    router.push(link);
+    setMobileActiveLink(link); // Update mobile active link
   };
+
 
   return (
     <header className='absolute flex items-center z-10'>

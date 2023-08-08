@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState('');
   const [mobileActiveLink, setMobileActiveLink] = useState('home'); // Separate state for mobile
 
   useEffect(() => {

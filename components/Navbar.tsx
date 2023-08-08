@@ -2,20 +2,26 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('');
-  const [mobileActiveLink, setMobileActiveLink] = useState(''); // Separate state for mobile
+  const router = useRouter();
+  // const [activeLink, setActiveLink] = useState('home');
+  const [mobileActiveLink, setMobileActiveLink] = useState('home'); // Separate state for mobile
+  // Use localStorage to store active link state
+  const storedActiveLink = localStorage.getItem('activeLink');
+  const initialActiveLink = storedActiveLink || 'home';
+  const [activeLink, setActiveLink] = useState(initialActiveLink);
+
 
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      setActiveLink(mobileActiveLink);
-    }
-  }, [mobileActiveLink]);
+    // Store active link in localStorage whenever it changes
+    localStorage.setItem('activeLink', activeLink);
+  }, [activeLink]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
-    setMobileActiveLink(link); // Update mobile active link
   };
 
 
@@ -41,17 +47,17 @@ const Navbar = () => {
               Shop
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'blogs' ? 'font-medium text-white' : 'text-black dark:text-black'}`}>
+          <li className={`group relative ${activeLink === 'blogs' ? 'font-medium text-white active-link' : 'text-black dark:text-black'}`}>
             <Link href='/blogs' onClick={() => handleLinkClick('blogs')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'blogs' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Blogs
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'stack' ? 'font-medium text-white' : 'text-black dark:text-whiblackte'}`}>
+          <li className={`group relative ${activeLink === 'stack' ? 'font-medium text-white active-link' : 'text-black dark:text-whiblackte'}`}>
             <Link href='/stack' onClick={() => handleLinkClick('stack')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'stack' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Stack
             </Link>
           </li>
-          <li className={`group relative ${activeLink === 'contact' ? 'font-medium text-white' : 'text-black dark:text-black'}`}>
+          <li className={`group relative ${activeLink === 'contact' ? 'font-medium text-white active-link' : 'text-black dark:text-black'}`}>
             <Link href='/contact' onClick={() => handleLinkClick('contact')} className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${activeLink === 'contact' ? 'rounded-full border bg-green-100 py-4 px-2  slide-left' : ''}`}>
               Contact
             </Link>

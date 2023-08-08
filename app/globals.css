@@ -67,13 +67,3 @@ body {
   transform: translateX(-10px);
   transition: transform 0.5s ease-in-out;
 }
-
-.active-link {
-  background-color: red;
-  /* Add console log to see if the style is being applied */
-  content: "active-link is applied";
-}
-
-.active-link-bg {
-  background-color: green;
-}

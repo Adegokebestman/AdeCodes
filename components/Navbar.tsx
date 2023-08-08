@@ -28,15 +28,18 @@ const Navbar = () => {
       <div className='md:static fixed flex mb-4 ml-8 justify-center items-center md:flex-row md:space-x-2  bottom-0 rounded-full border overflow-hidden bg-white bg-opacity-95 px-1 py-4 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10'>
       <ul className='flex space-x-0 md:space-x-2 justify-center md:justify-start'>
     {links.map((link) => {
+
       const isActive = pathname === link.path
       return (
+        <div key={link.id} className={`group relative ${ link.path ? 'font-medium text-black' : 'text-black dark:text-black'}`}>
         <Link
-        className={isActive ? 'text-green-100' : 'text-red-400'}
+       className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${isActive ? ' text-whiteu  active-link' : ''}`}
         href={link.path}
         key={link.id}
       >
         {link.label}
       </Link>
+      </div>
       )
     })}
     </ul>

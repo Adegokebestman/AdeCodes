@@ -2,23 +2,21 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 
 
 const Navbar = () => {
-  const router = useRouter();
-  // const [activeLink, setActiveLink] = useState('home');
-  const [mobileActiveLink, setMobileActiveLink] = useState('home'); // Separate state for mobile
-  // Use localStorage to store active link state
-  const storedActiveLink = localStorage.getItem('activeLink');
+  const isClient = typeof window !== 'undefined'; // Check if code is running on the client
+
+  const storedActiveLink = isClient ? localStorage.getItem('activeLink') : null;
   const initialActiveLink = storedActiveLink || 'home';
   const [activeLink, setActiveLink] = useState(initialActiveLink);
 
 
   useEffect(() => {
-    // Store active link in localStorage whenever it changes
-    localStorage.setItem('activeLink', activeLink);
-  }, [activeLink]);
+    if (isClient) {
+      localStorage.setItem('activeLink', activeLink);
+    }
+  }, [activeLink, isClient]);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default async function Blog() {
   const projects = await getProjects();
-  console.log('Blog', projects)
+  // console.log('Blog', projects)
 
   return(
     <div className="pt-36 pb-3">

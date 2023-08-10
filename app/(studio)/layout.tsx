@@ -1,11 +1,11 @@
 import '../globals.css'
-import type { Metadata } from 'next'
+// import type { Metadata } from 'next'
 
 
-export const metadata: Metadata = {
-  title: 'Admin Panel - Adecodes',
-  description: 'Admin Panel - Adegoke Bestman',
-}
+// export const metadata: Metadata = {
+//   title: 'Admin Panel - Adecodes',
+//   description: 'Admin Panel - Adegoke Bestman',
+// }
 
 export default function AdminLayout({
   children,

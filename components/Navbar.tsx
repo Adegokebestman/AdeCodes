@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <header className='absolute flex items-center z-10'>
-      <nav className='flex flex-col md:mb-4 md:mt-0 mt-2 items-center md:px-5'>
+      <nav className='flex flex-col md:mb-4 md:mt-0 mt-2 items-center md:px-1'>
         <div className='flex cursor-pointer flex-row items-center justify-center space-x-3'>
           <Link href='/'>
             <Image src='/logo.svg' alt='logo' width={158} height={59} className='object-contain' />

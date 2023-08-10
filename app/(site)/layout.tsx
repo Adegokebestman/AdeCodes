@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: 'Adecode - Adegoke Bestman',
 }
 
+
 export default function RootLayout({
   children,
 }: {

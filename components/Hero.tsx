@@ -14,7 +14,9 @@ const Hero = () => {
             Hi, it's Adegoke. I'm a Frontend Engineer who helps to turn ideas into accessible experiences.
             </h1>
             <h2 className='hero_subtitle '>
-            Combining <span className='span'>design</span>  and <span className='span'>code</span>, <span className='span'> I craft refined </span> and <span className='span'>unique </span> digital products that <span className='span'>elevate </span> the online brand presence of founders, startups, and creators.
+            Combining <span className='span'>design</span>  and <span className='span'>code</span>,
+            <span className='span'> I craft refined </span> and <span className='span'>unique </span>
+             digital products that <span className='span'>elevate </span> the online brand presence of founders, startups, and creators.
             </h2>
 
             <h3 className='description relative flex items-center text-[14px] text-darkGray-100 mt-8 pl-5'>

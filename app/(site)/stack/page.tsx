@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const page = () => {
+
   return (
     <div className='pt-36 mb-36'>
         <h1 className='hero_title'>
@@ -84,7 +85,23 @@ const page = () => {
                  </div>
                     </div>
 
+                    <div className='group flex cursor-pointer  flex-col space-y-5 rounded-2xl border border-darkGray-100 p-5 dark:bg-hoverBlack w-[200px] md:w-full'>
+            <Image src='/sanity.png' alt='sanity' width={100} height={100} className='flex self-center'/>
+            <div className="flex flex-col items-start space-y-2">
+                <h3 className="font-normal text-white">Sanity</h3>
+                <h4 className="w-auto rounded-lg text-white border bg-customGray px-3 py-1 text-sm  font-extralight
+                 border-green-100 dark:bg-hoverBlack">CMS</h4>
+                 </div>
+                    </div>
 
+                    <div className='group flex cursor-pointer  flex-col space-y-5 rounded-2xl border border-darkGray-100 p-5 dark:bg-hoverBlack w-[200px] md:w-full'>
+            <Image src='/paystack.png' alt='sanity' width={100} height={100} className='flex self-center'/>
+            <div className="flex flex-col items-start space-y-2">
+                <h3 className="font-normal text-white">Paystack</h3>
+                <h4 className="w-auto rounded-lg text-white border bg-customGray px-3 py-1 text-sm  font-extralight
+                 border-green-100 dark:bg-hoverBlack">Payment</h4>
+                 </div>
+                    </div>
 
                 </div>
             </div>

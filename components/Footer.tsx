@@ -36,25 +36,25 @@ const Footer = () => {
         </div>
         <div className="order-1 mb-3 flex flex-row  items-center md:order-2 md:mb-0">
           <div className=" flex flex-row items-center justify-center space-x-3 py-2 ">
-            <Link href=''>
+            <Link href='https://instagram.com/the_coderboy'>
             <Image src='/mdi_instagram.svg' alt="IG" width={24} height={24} />
             </Link>
 
-            <Link href=''>
+            <Link href='https://twitter.com/thecoderboyy'>
             <Image src='/mdi_twitter.svg' alt="twitter" width={24} height={24} />
             </Link>
 
-            <Link href=''>
+            <Link href='http://linkedin.com/in/adegokebestman'>
             <Image src='/mdi_linkedin.svg' alt="linkedin" width={24} height={24} />
             </Link>
 
-            <Link href=''>
+            <Link href='https://github.com/Adegokebestman'>
             <Image src='/mdi_github.svg' alt="github" width={24} height={24} />
             </Link>
 
-            <Link href=''>
+            {/* <Link href=''>
             <Image src='/dribble.svg' alt="dribble" width={24} height={24} />
-            </Link>
+            </Link> */}
 
           </div>
           <div className="h-6 w-1 border-r p-1 dark:border-slate-100/10"></div>

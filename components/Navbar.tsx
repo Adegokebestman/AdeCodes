@@ -33,7 +33,7 @@ const Navbar = () => {
       return (
         <div key={link.id} className={`group relative ${ link.path ? 'font-medium text-black' : 'text-black dark:text-black'}`}>
         <Link
-       className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${isActive ? ' text-whiteu  active-link' : ''}`}
+       className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${isActive ? ' text-white  active-link' : ''}`}
         href={link.path}
         key={link.id}
       >

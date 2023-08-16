@@ -5,8 +5,11 @@ const page = () => {
     const FORM_ENDPOINT = 'https://public.herotofu.com/v1/97624e40-3c4b-11ee-9864-53603e081af4';
 
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
     const inputs = e.target.elements;
     const data = {};
@@ -34,7 +37,11 @@ const page = () => {
       })
       .catch((err) => {
         // Submit the form manually
+
         e.target.submit();
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -69,7 +76,9 @@ const page = () => {
           <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-white duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-green-100 peer-focus:dark:text-blue-500">Your message</label>
         </div>
       </div>
-      <button type="submit" class="mt-5 rounded-md bg-green-100 px-10 py-2 text-white">Send Message</button>
+      <button type="submit" class="mt-5 rounded-md bg-green-100 px-10 py-2 text-white"  disabled={isLoading}>
+      {isLoading ? 'Loading...' : 'Send Message'}
+      </button>
     </form>
   </div>
 </div>

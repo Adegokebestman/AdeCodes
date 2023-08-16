@@ -1,5 +1,4 @@
 "use client"
-import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
@@ -33,7 +32,8 @@ const Navbar = () => {
       return (
         <div key={link.id} className={`group relative ${ link.path ? 'font-medium text-black' : 'text-black dark:text-black'}`}>
         <Link
-       className={`px-3 text-sm tracking-wide   dark:hover:text-green-100 md:px-6 md:text-base ${isActive ? ' text-white  active-link' : ''}`}
+       className={`px-3 text-sm tracking-wide dark:hover:text-green-100 md:px-6 md:text-base
+        ${isActive ? ' text-white  active-link' : ''}`}
         href={link.path}
         key={link.id}
       >
@@ -44,6 +44,14 @@ const Navbar = () => {
     })}
     </ul>
       </div>
+
+
+      {/* <div className='ml-48 md:mb-[10px] md:ml-48 mt-2 md:mt-[2px] '>
+            <Link href=''>
+            <Image src='/moon.svg' alt="dribble" width={30} height={30} />
+            </Link>
+            </div> */}
+
     </header>
   );
 };

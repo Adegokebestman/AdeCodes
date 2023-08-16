@@ -24,7 +24,7 @@ export default async function Home() {
             )          }
         <div className="text-white font-extrabold pt-4 pb-4 ">{project.name}</div>
         <span className='flex justify-between items-center'>
-        <h4 className="w-24 rounded-lg text-white border-2 bg-customGray px-3 py-1 text-sm  font-extralight
+        <h4 className="w-18 rounded-lg text-white border-2 bg-customGray px-3 py-1 text-sm  font-extralight
                  border-darkGray-100 dark:bg-hoverBlack">Design</h4>
       <Image src='/up_arrow.svg' alt='go-to' width={24} height={24} />
 </span>

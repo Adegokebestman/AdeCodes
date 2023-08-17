@@ -11,7 +11,7 @@ const Hero = () => {
     <div className='hero'>
         <div className='flex-1 pt-36 padding-x'>
             <h1 className='hero_title'>
-            Hi, it's Adegoke. I'm a Frontend Engineer who helps to turn ideas into accessible experiences.
+            Hi, it's Adegoke. I'm a Frontend Engineer and UI Designer who helps to turn ideas into accessible experiences.
             </h1>
             <h2 className='hero_subtitle '>
             Combining <span className='span'>design</span>  and <span className='span'>code</span>,

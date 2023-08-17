@@ -31,7 +31,7 @@ body {
 }
 
 .hero_title{
-  @apply 2xl:text-[40px] 2xl:leading-[60px] md:w-[100%] w-full text-left text-white md:mt-4 sm:text-[24px] sm:leading-[42px] text-[24px] font-bold
+  @apply 2xl:text-[40px] 2xl:leading-[60px] md:w-[100%] w-full text-left text-white md:mt-4 sm:text-[24px] sm:leading-[42px] text-[22px] font-bold
 }
 
 .hero_subtitle{

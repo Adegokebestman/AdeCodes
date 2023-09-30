@@ -9,7 +9,7 @@ const Hero = () => {
     }
   return (
     <div className='hero'>
-        <div className='flex-1 pt-36 padding-x'>
+        <div className='flex-1 md:py-20 pt-20 padding-x'>
             <h1 className='hero_title'>
             Hi, it's Adegoke. I'm a Frontend Engineer and UI Designer who helps to turn ideas into accessible experiences.
             </h1>
@@ -26,19 +26,24 @@ const Hero = () => {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-green-100 pl-2"></span>
               </span>
             </h3>
-    <CustomButton
+            <div className='flex items-center'>
+            <CustomButton
     title="Hire me"
     btnType="button"
-    containerStyles="bg-green-100 text-white rounded-full
-    mt-8 px-5 py-2 font-medium text-xl"
-    handleClick={handleScroll} />
+    containerStyles="bg-green-100 spans flex gap-2 items-center hover:animate-ping  hover:border-green-100 text-white rounded-full
+    mt-8 px-5 py-3 font-medium text-sm md:text-xl"
+    handleClick={handleScroll}
+    rightIcon='up_arrow.svg' />
 
 <CustomButton
     title="Get Template"
     btnType='button'
-    containerStyles="border-green-100 border-2 text-white rounded-full
-    mt-8 px-5 py-2 text-xl ml-10"
-    handleClick={handleScroll} />
+    containerStyles="border-green-100  gap-2 hover:bg-green-100 flex items-center text-white hover:rounded-full
+    mt-8 px-5 py-3 text-sm md:text-xl ml-10"
+    handleClick={handleScroll}
+    rightIcon='mdi_stars-outline.svg' />
+            </div>
+
         </div>
     </div>
   )

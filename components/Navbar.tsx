@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
+import CustomButton from './CustomButton';
 
 const Navbar = () => {
 
@@ -10,30 +11,36 @@ const Navbar = () => {
   const links = [
     { id: 'home', path: '/', label: 'Home' },
     { id: 'shop', path: '/shop', label: 'Shop' },
-    { id: 'blogs', path: '/blogs', label: 'Blogs' },
+    // { id: 'blogs', path: '/blogs', label: 'Blogs' },
     { id: 'stack', path: '/stack', label: 'Stack' },
     { id: 'contact', path: '/contact', label: 'Contact' },
   ];
 
   return (
-    <header className='absolute flex items-center z-10'>
+    <header>
+    <div className='flex fixed z-40 top-0 navbar_blur md:hidden justify-center'>
+          <Link href='/'>
+            <Image  src='/logo.svg' alt='logo' width={158} height={59} className='object-contain' />
+          </Link>
+        </div>
+     <div className='navbar md:navbar_blur md:mt-4 mt-28 px-8 flex md:justify-between justify-center items-center z-10'>
       <nav className='flex flex-col md:mb-4 md:mt-0 mt-2 items-center md:px-1'>
         <div className='flex cursor-pointer flex-row items-center justify-center space-x-3'>
           <Link href='/'>
-            <Image src='/logo.svg' alt='logo' width={158} height={59} className='object-contain' />
+            <Image  src='/logo.svg' alt='logo' width={158} height={59} className='object-contain md:block hidden' />
           </Link>
         </div>
       </nav>
-      <div className='md:static fixed flex mb-4 ml-8 justify-center items-center md:flex-row md:space-x-2  bottom-0 rounded-full border overflow-hidden bg-white bg-opacity-95 px-1 py-4 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10'>
+      <div className='md:static relative flex  mb-4 ml-4 justify-center items-center md:flex-row md:space-x-2  bottom-0 rounded-full border overflow-hidden nav-pill bg-opacity-95 px-1 py-3 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10'>
       <ul className='flex space-x-0 md:space-x-2 justify-center md:justify-start'>
     {links.map((link) => {
 
       const isActive = pathname === link.path
       return (
-        <div key={link.id} className={`group relative ${ link.path ? 'font-medium text-black' : 'text-black dark:text-black'}`}>
+        <div key={link.id} className={`group relative ${ link.path ? ' text-white' : 'text-black dark:text-black'}`}>
         <Link
        className={`px-3 text-sm tracking-wide dark:hover:text-green-100 md:px-6 md:text-base
-        ${isActive ? ' text-white  active-link' : ''}`}
+        ${isActive ? ' text-white font-medium active-link' : ''}`}
         href={link.path}
         key={link.id}
       >
@@ -44,14 +51,17 @@ const Navbar = () => {
     })}
     </ul>
       </div>
+<div className='md:flex hidden  gap-4'>
+<button className='text-white  hover:bg-green-100 rounded-full py-2 px-3 flex items-center gap-2 text-sm'>LinkedIn
+<Image src='/up_arrow.svg' alt='linkedin' width={16} height={16} />
+</button>
 
+<button className='text-white flex items-center gap-2 text-sm'>Resume
+<Image src='/up_arrow.svg' alt='linkedin' width={16} height={16} />
+</button>
+</div>
 
-      {/* <div className='ml-48 md:mb-[10px] md:ml-48 mt-2 md:mt-[2px] '>
-            <Link href=''>
-            <Image src='/moon.svg' alt="dribble" width={30} height={30} />
-            </Link>
-            </div> */}
-
+            </div>
     </header>
   );
 };

@@ -5,6 +5,7 @@ import { CustomButton } from ".";
 
 const Footer = () => {
   return (
+    <div className="overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 md:px-5 px-2 xl:px-0 ">
     <footer className=" flex flex-col mt-5 rounded-2xl w-full h-full border border-darkGray-100">
       <h1 className="text-white flex flex-row py-4 px-8 font-bold text-[20px] leading-7">
         Join the Creative Community
@@ -69,6 +70,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    </div>
   );
 };
 

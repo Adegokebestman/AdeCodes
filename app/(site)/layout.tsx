@@ -22,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='overflow-hidden mx-auto max-w-5xl flex-col align-center justify-center py-8 md:px-5 px-2 xl:px-0 '>
-        <Navbar />
+      <Navbar />
+        <div className='overflow-hidden mx-auto flex-col align-center justify-center py-6 md:px-5 px-2 xl:px-0 '>
+
         {children}
         <Footer />
         </div>

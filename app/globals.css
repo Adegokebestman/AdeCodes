@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --background-black: #000;
+  --background-black: #0B0B0B;
   --background-green: #00AC6B;
 }
 
@@ -38,8 +38,14 @@ body {
   @apply 2xl:text-[18px] space-y-5 tracking-tight md:w-[80%] w-[80%]  text-darkGray-100 text-[16px] sm:leading-[28px] leading-[24px] font-medium md:mt-6 mt-4
 }
 
-.span{
-  @apply text-green-100
+.padding_r_l{
+  @apply mx-auto max-w-5xl flex-col justify-center py-8 md:px-5 px-2 xl:px-0
+}
+
+.spans{
+  color:#f2f2f2;
+  background: rgba(33, 146, 46, 0);
+  box-shadow: 0 2px 25px 2px #f2f2f2
 }
 
 .underline{
@@ -70,9 +76,66 @@ body {
 .active-link{
   border-width: 1px;
   border-radius:999px;
-  background-color: rgb(0 172 107 / var(--tw-bg-opacity));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  color:#f2f2f2;
+  background: rgba(33, 146, 46, 0);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+/* .navbg_color{
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 25px 2px #fff
+} */
+
+.navbar_blur{
+    width: 100%;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: transparent;
+
+}
+
+.nav-pill {
+  height: 48px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  background-color: rgba(242, 242, 242, .05);
+  border: 1px solid rgba(242, 242, 242, .1);
+  border-radius: 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: box-shadow 1s cubic-bezier(.23, 1, .32, 1), border .6s cubic-bezier(.165, .84, .44, 1);
+  display: flex;
+  position: absolute;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+/* styles.module.css */
+
+/* Fixed navbar for mobile */
+@media (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+    /* Add any other mobile-specific styles */
+  }
+}
+
+/* Fixed navbar for desktop */
+@media (min-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it appears above other content */
+    /* Add any other desktop-specific styles */
+  }
 }

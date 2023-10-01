@@ -139,3 +139,38 @@ body {
     /* Add any other desktop-specific styles */
   }
 }
+
+
+/* Carousel */
+.carousel{
+  /* background-color: blue; */
+  color: white;
+  }
+
+  .box{
+  height: 479px;
+  width: 1342px;
+  }
+
+  .slick-slide div{
+    margin:  0 2rem;
+  }
+
+  .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
+    display: none !important;
+  }
+  .slick-next:before{
+    display: none !important;
+  }
+  .slick-prev:before{
+    display: none !important;
+  }
+  @media (max-width: 768px) {
+    .slick-slide div {
+      margin: 0 0.5rem !important;
+    }
+    .box{
+      height: 279px;
+      width: 542px;
+      }
+  }

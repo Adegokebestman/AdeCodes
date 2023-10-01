@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const links = [
     { id: 'home', path: '/', label: 'Home' },
+    { id: 'work', path: '/work', label: 'Work' },
     { id: 'shop', path: '/shop', label: 'Shop' },
     // { id: 'blogs', path: '/blogs', label: 'Blogs' },
     { id: 'stack', path: '/stack', label: 'Stack' },
@@ -23,7 +24,7 @@ const Navbar = () => {
             <Image  src='/logo.svg' alt='logo' width={158} height={59} className='object-contain' />
           </Link>
         </div>
-     <div className='navbar md:navbar_blur md:mt-4 mt-28 px-8 flex md:justify-between justify-center items-center z-10'>
+     <div className='navbar  md:navbar_blur navbar_blur md:mt-4 mt-28 px-8 flex md:justify-between justify-center items-center z-10'>
       <nav className='flex flex-col md:mb-4 md:mt-0 mt-2 items-center md:px-1'>
         <div className='flex cursor-pointer flex-row items-center justify-center space-x-3'>
           <Link href='/'>
@@ -52,7 +53,10 @@ const Navbar = () => {
     </ul>
       </div>
 <div className='md:flex hidden  gap-4'>
-<button className='text-white  hover:bg-green-100 rounded-full py-2 px-3 flex items-center gap-2 text-sm'>LinkedIn
+<button className='text-white  hover:bg-green-100 rounded-full py-2 px-3 flex items-center gap-2 text-sm'>
+  <Link href='https://www.linkedin.com/in/adegokebestman/'>
+  LinkedIn
+  </Link>
 <Image src='/up_arrow.svg' alt='linkedin' width={16} height={16} />
 </button>
 

@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import Services from "./Services";
 import Marque from "./Marque";
 import Works from "./Works";
+import Carousel from "./Carousel";
+import Tags from "./Tags";
 
 
 export {
@@ -15,4 +17,6 @@ export {
     Services,
     Marque,
     Works,
+    Carousel,
+    Tags,
 }

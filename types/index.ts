@@ -28,3 +28,12 @@ content: PortableTextBlock[];
 //     icon: string;
 //     description: string;
 // }
+
+
+export type CardDataProps = {
+    cardData: any
+}
+
+export type TagsProps ={
+    tagName: string
+}

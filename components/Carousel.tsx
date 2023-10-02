@@ -69,13 +69,9 @@ const Carousel = ({ cardData }: CardDataProps) => {
         <Slider {...settings} ref={sliderRef}>
           {cardData.map((card) => (
             <div className="box rounded-xl" key={card.id}>
-              <span className="box-inner">
-                <div className="box-front">
-                  <div className="box-front-content flex justify-center pt-12 pb-4">
-                    <Image src={card.imageUrl} width={600} height={500} alt="hehe" />
-                  </div>
+                  <div className="box-front-content flex justify-center pt-12">
+                    <Image src={card.imageUrl} width={1342} height={600} alt="hehe" />
                 </div>
-              </span>
             </div>
           ))}
         </Slider>

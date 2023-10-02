@@ -3,12 +3,13 @@ import React from 'react'
 import { Carousel, Tags } from '@/components'
 
 const kanpaiData = [
-    { id: 1, imageUrl: '/kanpai1.jpg',  },
-    { id: 2, imageUrl: '/kanpai2.jpg' },
-    { id: 3, imageUrl: '/kanpai3.jpg', },
-    { id: 4, imageUrl: '/kanpai4.jpg' },
-    { id: 5, imageUrl: '/kanpai5.jpg',},
-    { id: 6, imageUrl: '/kanpai6.jpg' },
+    { id: 1, imageUrl: '/kan.png',  },
+    { id: 2, imageUrl: '/kan2.png' },
+    { id: 3, imageUrl: '/kan3.png', },
+    { id: 4, imageUrl: '/kan7.png' },
+    { id: 5, imageUrl: '/kan5.png',},
+    { id: 6, imageUrl: '/kan6.png' },
+    { id: 7, imageUrl: '/kan1.png' },
 ]
 const Kanpai = () => {
   return (

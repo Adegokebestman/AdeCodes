@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation'
-import CustomButton from './CustomButton';
 
 const Navbar = () => {
 
@@ -11,7 +10,7 @@ const Navbar = () => {
   const links = [
     { id: 'home', path: '/', label: 'Home' },
     { id: 'work', path: '/work', label: 'Work' },
-    { id: 'shop', path: '/shop', label: 'Shop' },
+    // { id: 'shop', path: '/shop', label: 'Shop' },
     // { id: 'blogs', path: '/blogs', label: 'Blogs' },
     { id: 'stack', path: '/stack', label: 'Stack' },
     { id: 'contact', path: '/contact', label: 'Contact' },
@@ -32,7 +31,7 @@ const Navbar = () => {
           </Link>
         </div>
       </nav>
-      <div className='md:static relative flex  mb-4 ml-4 justify-center items-center md:flex-row md:space-x-2  bottom-0 rounded-full border overflow-hidden nav-pill bg-opacity-95 px-1 py-3 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10'>
+      <div className='md:static relative flex  mb-4 md:ml-4 justify-center items-center md:flex-row md:space-x-2  bottom-0 rounded-full border overflow-hidden nav-pill bg-opacity-95 px-1 py-3 shadow-xl backdrop-blur-sm backdrop-filter dark:border-slate-100/10'>
       <ul className='flex space-x-0 md:space-x-2 justify-center md:justify-start'>
     {links.map((link) => {
 

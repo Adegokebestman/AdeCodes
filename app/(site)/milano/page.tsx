@@ -3,12 +3,12 @@ import React from 'react'
 import { Carousel, Tags } from '@/components'
 
 const milanoData = [
-    { id: 1, imageUrl: '/mila.png',  },
-    { id: 2, imageUrl: '/image 9.png' },
-    { id: 3, imageUrl: '/image 8.png', },
-    { id: 4, imageUrl: '/9.png' },
-    { id: 5, imageUrl: '/image 2.png',},
-    { id: 6, imageUrl: '/image 7.png' },
+    { id: 1, imageUrl: '/mil3.png',  },
+    { id: 2, imageUrl: '/mil.png' },
+    { id: 3, imageUrl: '/mil2.png', },
+    { id: 4, imageUrl: '/mil6.png',},
+    { id: 5, imageUrl: '/mil4.png' },
+    { id: 6, imageUrl: '/mil5.png' },
 ]
 const Milano = () => {
   return (
@@ -18,7 +18,7 @@ const Milano = () => {
         <h3 className='md:text-xl text-base  md:mt-6 mt-3 '>Milanosignatures Apartment provides ideal accomodation within Lagos Mainland</h3>
         </div>
 
-    <div className='bg-bluee-400 w-full mt-8'>
+    <div className='w-auto mt-8'>
     <Carousel cardData={milanoData} />
     </div>
 

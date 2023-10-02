@@ -6,22 +6,22 @@ import Link from 'next/link';
 
 
 const worksData = [
-    {
-      id: 1,
-      icon: <AiFillShopping />,
-      title: 'ShopAxa',
-      description: 'Web Development',
-      imageSrc: '/1.png',
-      backgroundColor: '#FF5733', // Add a background color property
-      url: '/shopaxa'
-    },
+    // {
+    //   id: 1,
+    //   icon: <AiFillShopping />,
+    //   title: 'ShopAxa',
+    //   description: 'Web Development',
+    //   imageSrc: '/1.png',
+    //   backgroundColor: '#FF5733', // Add a background color property
+    //   url: '/shopaxa'
+    // },
     {
       id: 2,
       icon: <AiOutlineDesktop />,
       title: 'Kanpaiapp',
       description: 'Design, Front-end, SEO',
       imageSrc: '/7.png',
-      backgroundColor: '#33FF57', // Add a background color property
+      backgroundColor: '#F17840', // Add a background color property
       url: '/kanpaiapp'
     },
     {
@@ -30,7 +30,7 @@ const worksData = [
       title: 'Milanosignatures Apartment',
       description: 'Design, Front-end, SEO',
       imageSrc: '/mila.png',
-      backgroundColor: '#5733FF', // Add a background color property
+      backgroundColor: '#CBA135', // Add a background color property
       url: '/milano'
     },
     {

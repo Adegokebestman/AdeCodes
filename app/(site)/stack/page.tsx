@@ -4,7 +4,7 @@ import Image from 'next/image';
 const page = () => {
 
   return (
-    <div className='pt-36 mt-8 mb-36 padding_r_l'>
+    <div className='pt-36 mt-20 mb-36 padding_r_l'>
         <h1 className='hero_title'>
            Apps
             </h1>

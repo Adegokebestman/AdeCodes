@@ -2,11 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import CustomButton  from './CustomButton';
+import  Link from 'next/link';
 
 const Hero = () => {
-    const handleScroll = () => {
 
-    }
   return (
     <div className='hero'>
         <div className='flex-1 md:py-20 pt-20 padding-x'>
@@ -27,21 +26,28 @@ const Hero = () => {
               </span>
             </h3>
             <div className='flex items-center'>
-            <CustomButton
+
+              <button className='bg-green-100 spans flex gap-2 items-center  hover:border-green-100 text-white rounded-full
+    mt-8 px-5 py-3  text-sm md:text-xl' >
+      <Link href='/contact'>
+      Hire Me
+      </Link>
+              <Image src='/up_arrow.svg' alt='go-to' width={18} height={18} />
+              </button>
+            {/* <CustomButton
     title="Hire me"
     btnType="button"
-    containerStyles="bg-green-100 spans flex gap-2 items-center hover:animate-ping  hover:border-green-100 text-white rounded-full
+    containerStyles="bg-green-100 spans flex gap-2 items-center  hover:border-green-100 text-white rounded-full
     mt-8 px-5 py-3 font-medium text-sm md:text-xl"
-    handleClick={handleScroll}
-    rightIcon='up_arrow.svg' />
+    handleClick={hireMe}
+    rightIcon='up_arrow.svg' /> */}
 
-<CustomButton
+{/* <CustomButton
     title="Get Template"
     btnType='button'
     containerStyles="border-green-100  gap-2 hover:bg-green-100 flex items-center text-white hover:rounded-full
     mt-8 px-5 py-3 text-sm md:text-xl ml-10"
-    handleClick={handleScroll}
-    rightIcon='mdi_stars-outline.svg' />
+    rightIcon='mdi_stars-outline.svg' /> */}
             </div>
 
         </div>

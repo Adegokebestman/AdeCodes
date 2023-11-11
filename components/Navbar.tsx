@@ -7,6 +7,10 @@ const Navbar = () => {
 
   const pathname = usePathname()
 
+  /**
+   * Array of objects representing the links to be displayed in the navbar.
+   * Each object contains an id, path, and label property.
+   */
   const links = [
     { id: 'home', path: '/', label: 'Home' },
     { id: 'work', path: '/work', label: 'Work' },

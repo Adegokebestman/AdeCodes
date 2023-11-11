@@ -6,15 +6,15 @@ import Link from 'next/link';
 
 
 const worksData = [
-    // {
-    //   id: 1,
-    //   icon: <AiFillShopping />,
-    //   title: 'ShopAxa',
-    //   description: 'Web Development',
-    //   imageSrc: '/1.png',
-    //   backgroundColor: '#FF5733', // Add a background color property
-    //   url: '/shopaxa'
-    // },
+    {
+      id: 1,
+      icon: <AiFillShopping />,
+      title: 'ShopAxa',
+      description: 'Web Development',
+      imageSrc: '/1.png',
+      backgroundColor: '#6879d0', // Add a background color property
+      url: '/shopaxa'
+    },
     {
       id: 2,
       icon: <AiOutlineDesktop />,

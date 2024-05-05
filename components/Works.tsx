@@ -33,8 +33,26 @@ const worksData = [
       backgroundColor: '#CBA135', // Add a background color property
       url: '/milano'
     },
-    {
-        id: 3,
+      {
+        id: 5,
+        icon: <AiOutlineAppstore />,
+        title: 'Drjay',
+        description: 'Front-end',
+        imageSrc: '/11.png',
+        backgroundColor: '#da4949', // Add a background color property
+        url: 'https://www.drjay.pro/'
+      },
+      {
+        id: 6,
+        icon: <AiOutlineAppstore />,
+        title: 'Creative Max Studio',
+        description: 'Front-end, Framer',
+        imageSrc: '/10.png',
+        backgroundColor: '#99A1F0', // Add a background color property
+        url: 'https://creativemaxstudios.framer.website/'
+      },
+      {
+        id: 4,
         icon: <AiOutlineAppstore />,
         title: 'Capitaltd',
         description: 'Front-end',

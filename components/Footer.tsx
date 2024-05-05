@@ -16,7 +16,7 @@ const Footer = () => {
       </h2>
       <div className="flex justify-start items-center px-8 mb-2">
         <CustomButton
-          title="Read for FREE"
+          title="Coming soon"
           btnType="button"
           containerStyles="bg-green-100 border-1 text-white rounded-full
       mt-8 px-5 py-2 text-xl"

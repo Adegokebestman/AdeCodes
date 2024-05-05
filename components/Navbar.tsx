@@ -7,6 +7,10 @@ const Navbar = () => {
 
   const pathname = usePathname()
 
+  /**
+   * Array of objects representing the links to be displayed in the navbar.
+   * Each object contains an id, path, and label property.
+   */
   const links = [
     { id: 'home', path: '/', label: 'Home' },
     { id: 'work', path: '/work', label: 'Work' },
@@ -52,14 +56,17 @@ const Navbar = () => {
     </ul>
       </div>
 <div className='md:flex hidden  gap-4'>
-<button className='text-white  hover:bg-green-100 rounded-full py-2 px-3 flex items-center gap-2 text-sm'>
+<button className='text-white hover:animate-bounce  hover:bg-green-100 rounded-full py-2 px-3 flex items-center gap-2 text-sm'>
   <Link href='https://www.linkedin.com/in/adegokebestman/'>
   LinkedIn
   </Link>
 <Image src='/up_arrow.svg' alt='linkedin' width={16} height={16} />
 </button>
 
-<button className='text-white flex items-center gap-2 text-sm'>Resume
+<button className='text-white hover:animate-bounce flex items-center gap-2 text-sm hover:bg-green-100 rounded-full py-2 px-3  '>
+  <Link href='https://drive.google.com/file/d/18JYk77dCVPMTZZl3RBI2j5fida_7Q1Il/view?usp=drivesdk'>
+  Resume
+  </Link>
 <Image src='/up_arrow.svg' alt='linkedin' width={16} height={16} />
 </button>
 </div>

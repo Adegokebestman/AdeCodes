@@ -33,7 +33,7 @@ const Footer = () => {
             Become an &nbsp;
             <span className="text-white dark:text-primary">Affiliate</span>
           </h3>
-          <h3 className="description text-darkGray-100">©2023 Adegoke</h3>
+          <h3 className="description text-darkGray-100">©2024 Adegoke</h3>
         </div>
         <div className="order-1 mb-3 flex flex-row  items-center md:order-2 md:mb-0">
           <div className=" flex flex-row items-center justify-center space-x-3 py-2 ">

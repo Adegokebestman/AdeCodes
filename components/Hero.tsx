@@ -10,7 +10,7 @@ const Hero = () => {
     <div className='hero'>
         <div className='flex-1 md:py-20 pt-20 padding-x'>
             <h1 className='hero_title'>
-            Hi, it's Adegoke. I'm a Frontend Engineer and UI Designer who helps to turn ideas into accessible experiences.
+            Hello, I'm Adegoke, a seasoned Frontend Developer, UI Designer, and Framer Developer dedicated to transforming concepts into user-friendly experiences.
             </h1>
             <h2 className='hero_subtitle '>
             Combining <span className='span'>design</span>  and <span className='span'>code</span>,

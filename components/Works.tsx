@@ -18,11 +18,11 @@ const worksData = [
   },
 
   {
-    id:4,
+    id:9,
     icon: <CiCoffeeCup />,
     title: 'Dopecoffee',
     description: 'Frontend',
-    imageSrc: 'dope.png',
+    imageSrc: '/dope.png',
     backgroundColor: '#FF15F6',
     url: 'https://dopecoffee.club'
   },

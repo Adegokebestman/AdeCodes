@@ -7,8 +7,8 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Adecodes - Developer & Designer',
-  description: 'Adecode - Adegoke Bestman',
+  title: 'Adegoke Bestman - Developer & Designer',
+  description: 'Adegoke Bestman personal portfolio',
 }
 
 

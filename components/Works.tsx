@@ -18,7 +18,7 @@ const worksData = [
   },
 
   {
-    id:9,
+    id:2,
     icon: <CiCoffeeCup />,
     title: 'Dopecoffee',
     description: 'Frontend',
@@ -28,7 +28,7 @@ const worksData = [
   },
 
   {
-      id: 2,
+      id: 3,
       icon: <AiFillShopping />,
       title: 'ShopAxa',
       description: 'Frontend, SEO',
@@ -38,7 +38,7 @@ const worksData = [
     },
 
     {
-      id: 3,
+      id: 4,
       icon: <AiOutlineAppstore />,
       title: 'Milanosignatures Apartment',
       description: 'Design, Frontend, SEO',
@@ -65,7 +65,7 @@ const worksData = [
         url: 'https://creativemaxstudios.framer.website/'
       },
       {
-        id: 4,
+        id: 7,
         icon: <AiOutlineAppstore />,
         title: 'Capitaltd',
         description: 'Frontend',

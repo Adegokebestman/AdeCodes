@@ -22,6 +22,26 @@ const page = () => {
                  </div>
                     </div>
 
+
+                    <div className='group flex cursor-pointer  flex-col space-y-5 rounded-2xl border border-darkGray-100 p-5 dark:bg-hoverBlack w-[200px] md:w-full'>
+            <Image src='/framer.jpg' alt='notion' width={100} height={100} className='flex self-center'/>
+            <div className="flex flex-col items-start space-y-2">
+                <h3 className="font-normal text-white">Framer</h3>
+                <h4 className="w-auto rounded-lg text-white border bg-customGray px-3 py-1 text-sm  font-extralight
+                 border-green-100 dark:bg-hoverBlack">Low-Code</h4>
+                 </div>
+                    </div>
+
+                    <div className='group flex cursor-pointer  flex-col space-y-5 rounded-2xl border border-darkGray-100 p-5 dark:bg-hoverBlack w-[200px] md:w-full'>
+            <Image src='/webflow.png' alt='notion' width={100} height={100} className='flex self-center'/>
+            <div className="flex flex-col items-start space-y-2">
+                <h3 className="font-normal text-white">Webflow</h3>
+                <h4 className="w-auto rounded-lg text-white border bg-customGray px-3 py-1 text-sm  font-extralight
+                 border-green-100 dark:bg-hoverBlack">Low-code</h4>
+                 </div>
+                    </div>
+
+
                     <div className='group flex cursor-pointer  flex-col space-y-5 rounded-2xl border border-darkGray-100 p-5 dark:bg-hoverBlack w-[200px] md:w-full'>
             <Image src='/Notion.svg' alt='notion' width={100} height={100} className='flex self-center'/>
             <div className="flex flex-col items-start space-y-2">

@@ -1,34 +1,47 @@
 import React from 'react';
 import Image from 'next/image';
 import { AiFillShopping,AiOutlineDesktop, AiOutlineAppstore } from 'react-icons/ai';
+import { CiCoffeeCup } from "react-icons/ci";
 import Link from 'next/link';
 
 
 
 const worksData = [
-    {
-      id: 1,
+  {
+    id: 1,
+    icon: <AiOutlineDesktop />,
+    title: 'Kanpaiapp',
+    description: 'Design, Frontend, SEO',
+    imageSrc: '/7.png',
+    backgroundColor: '#F17840', // Add a background color property
+    url: '/kanpaiapp'
+  },
+
+  {
+    id:4,
+    icon: <CiCoffeeCup />,
+    title: 'Dopecoffee',
+    description: 'Frontend',
+    imageSrc: 'dope.png',
+    backgroundColor: '#FF15F6',
+    url: 'https://dopecoffee.club'
+  },
+
+  {
+      id: 2,
       icon: <AiFillShopping />,
       title: 'ShopAxa',
-      description: 'Web Development',
+      description: 'Frontend, SEO',
       imageSrc: '/1.png',
       backgroundColor: '#6879d0', // Add a background color property
       url: 'https://shopaxa.vercel.app/'
     },
-    {
-      id: 2,
-      icon: <AiOutlineDesktop />,
-      title: 'Kanpaiapp',
-      description: 'Design, Front-end, SEO',
-      imageSrc: '/7.png',
-      backgroundColor: '#F17840', // Add a background color property
-      url: '/kanpaiapp'
-    },
+
     {
       id: 3,
       icon: <AiOutlineAppstore />,
       title: 'Milanosignatures Apartment',
-      description: 'Design, Front-end, SEO',
+      description: 'Design, Frontend, SEO',
       imageSrc: '/mila.png',
       backgroundColor: '#CBA135', // Add a background color property
       url: '/milano'
@@ -37,7 +50,7 @@ const worksData = [
         id: 5,
         icon: <AiOutlineAppstore />,
         title: 'Drjay',
-        description: 'Front-end',
+        description: 'Frontend',
         imageSrc: '/11.png',
         backgroundColor: '#da4949', // Add a background color property
         url: 'https://www.drjay.pro/'
@@ -46,7 +59,7 @@ const worksData = [
         id: 6,
         icon: <AiOutlineAppstore />,
         title: 'Creative Max Studio',
-        description: 'Front-end, Framer',
+        description: 'Frontend, Framer',
         imageSrc: '/10.png',
         backgroundColor: '#99A1F0', // Add a background color property
         url: 'https://creativemaxstudios.framer.website/'
@@ -55,7 +68,7 @@ const worksData = [
         id: 4,
         icon: <AiOutlineAppstore />,
         title: 'Capitaltd',
-        description: 'Front-end',
+        description: 'Frontend',
         imageSrc: '/4.png',
         backgroundColor: '#57336F', // Add a background color property
         url: 'https://www.caplensltd.com/'

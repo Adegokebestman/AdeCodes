@@ -24,14 +24,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-            <GoogleAnalytics ga_id= 
+            <GoogleAnalytics ga_id=
             {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
           ) : null}
       <Navbar />
         <div className='overflow-hidden mx-auto flex-col align-center justify-center py-6 md:px-5 px-2 xl:px-0 '>
 
         {children}
-        <Footer />
+        {/* <Footer /> */}
         </div>
       </body>
     </html>

@@ -7,8 +7,8 @@ import  Link from 'next/link';
 const Hero = () => {
 
   return (
-    <div className='hero'>
-        <div className='flex-1 md:py-20 pt-20 padding-x'>
+    <div className=''>
+        <div className='flex-1 md:py-20 pt-20'>
             <h1 className='hero_title'>
             Hello, I'm Adegoke, a seasoned Frontend Developer, UI Designer, and Framer Developer dedicated to transforming concepts into user-friendly experiences.
             </h1>
@@ -34,20 +34,7 @@ const Hero = () => {
       </Link>
               <Image src='/up_arrow.svg' alt='go-to' width={18} height={18} />
               </button>
-            {/* <CustomButton
-    title="Hire me"
-    btnType="button"
-    containerStyles="bg-green-100 spans flex gap-2 items-center  hover:border-green-100 text-white rounded-full
-    mt-8 px-5 py-3 font-medium text-sm md:text-xl"
-    handleClick={hireMe}
-    rightIcon='up_arrow.svg' /> */}
 
-{/* <CustomButton
-    title="Get Template"
-    btnType='button'
-    containerStyles="border-green-100  gap-2 hover:bg-green-100 flex items-center text-white hover:rounded-full
-    mt-8 px-5 py-3 text-sm md:text-xl ml-10"
-    rightIcon='mdi_stars-outline.svg' /> */}
             </div>
 
         </div>
@@ -56,3 +43,18 @@ const Hero = () => {
 }
 
 export default Hero
+
+ {/* <CustomButton
+  title="Hire me"
+  btnType="button"
+  containerStyles="bg-green-100 spans flex gap-2 items-center  hover:border-green-100 text-white rounded-full
+  mt-8 px-5 py-3 font-medium text-sm md:text-xl"
+  handleClick={hireMe}
+  rightIcon='up_arrow.svg' /> */}
+
+{/* <CustomButton
+  title="Get Template"
+  btnType='button'
+  containerStyles="border-green-100  gap-2 hover:bg-green-100 flex items-center text-white hover:rounded-full
+  mt-8 px-5 py-3 text-sm md:text-xl ml-10"
+  rightIcon='mdi_stars-outline.svg' /> */}

@@ -11,8 +11,8 @@ export default async function Home() {
       <div className=" mx-auto padding_r_l ">
     <Hero />
     </div>
-    <Marque />
-    <div className='mt-12 padding-x padding-y max-width'>
+    {/* <Marque /> */}
+    {/* <div className='mt-12 padding-x padding-y max-width'>
       <div className='padding_r_l '>
         <div className="container mx-auto mt-10">
       <div className="">
@@ -21,12 +21,11 @@ export default async function Home() {
         <div className='py-24'>
         <h1 className='  text-white font-bold text-3xl'>Latest drops</h1>
     <Works />
-
         </div>
       </div>
     </div>
 
-        {/* <div className="mt-10 grid justify-items-center gap-10 md:grid-cols-3 md:justify-items-start md:gap-5 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10">
+        <div className="mt-10 grid justify-items-center gap-10 md:grid-cols-3 md:justify-items-start md:gap-5 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10">
 
       {projects.map((project) =>  (
         <Link href={`/projects/${project.slug}`} key={project._id}
@@ -44,9 +43,9 @@ export default async function Home() {
 </span>
           </Link>
       ))}
-      </div> */}
+      </div>
         </div>
-    </div>
+    </div> */}
 
     </main>
   )

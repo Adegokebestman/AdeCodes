@@ -50,7 +50,7 @@ const Milano = () => {
             </ul>
            </div>
 
-           <div className='py-16'>
+           {/* <div className='py-16'>
             <h1 className='text-white text-4xl'>Lesson Learned:</h1>
             <ul className='list-disc mt-4 text-white'>
                 <li className='mt-4'>
@@ -63,7 +63,7 @@ const Milano = () => {
                 Enhanced skills in user-centered design principles and optimizing user flows for maximum engagement.
                 </li>
             </ul>
-           </div>
+           </div> */}
 
            <div className='py-16 '>
            <h1 className='text-white text-4xl'>Apartment List:</h1>
